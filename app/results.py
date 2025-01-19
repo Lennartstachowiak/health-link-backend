@@ -9,12 +9,16 @@ results = [
                 "header": "Schedule Follow-up",
                 "text": "Your elevated white blood cell count requires further evaluation.",
                 "buttonText": "Book Appointment",
+                "link": "https://www.doctolib.de/privatpraxis/10405-berlin/dr-sarah-bechstein-gmbh/booking/availabilities",
+                "info": "",
                 "iconType": "calendar",
             },
             {
                 "header": "Regular Blood Work",
                 "text": "Schedule your next routine blood test in 3 months.",
                 "buttonText": "Set Reminder",
+                "link": "",
+                "info": "Reminder set!",
                 "iconType": "bell",
             },
             {
