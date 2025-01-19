@@ -80,7 +80,6 @@ async def get_pdf(filename: str):
 
     # Construct the full path to the PDF file
     file_path = os.path.join(PDF_FOLDER, filename)
-    print(f"Looking for file at: {file_path}")  # Debugging output
 
     # Check if the file exists
     if not os.path.exists(file_path):
