@@ -16,7 +16,7 @@ results = [
                 "header": "Regular Blood Work",
                 "text": "Schedule your next routine blood test in 3 months.",
                 "buttonText": "Set Reminder",
-                "link": "https://www.internist-wilmersdorf.de/en/individueller-gesundheitscheck",
+                "link": "https://www.calendly-embed.com/embed-options#inline",
                 "iconType": "bell",
             },
             {
@@ -71,7 +71,7 @@ results = [
                 "header": "Schedule Skin Check",
                 "text": "Regular self-checks and yearly dermatologist visits help monitor skin changes.",
                 "buttonText": "Book Appointment",
-                "link": "https://dermatologikum-berlin.de/online-appointment-booking.html?lang=en",
+                "link": "https://www.calendly-embed.com/embed-options#inline",
                 "iconType": "calendar",
             },
             {
