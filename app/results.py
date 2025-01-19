@@ -9,7 +9,7 @@ results = [
                 "header": "Schedule Follow-up",
                 "text": "Your elevated white blood cell count requires further evaluation.",
                 "buttonText": "Book Appointment",
-                "link": "https://mvz.kfh.de/en/berlin-mitte/booking-appointments-online",
+                "link": "https://www.doctolib.de/privatpraxis/10405-berlin/dr-sarah-bechstein-gmbh/booking/availabilities",
                 "iconType": "calendar",
             },
             {
