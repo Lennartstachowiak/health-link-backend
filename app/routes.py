@@ -18,7 +18,7 @@ MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
 
 auth_client_secret = AuthApiKey()
 
-WEAVIATE_URL = "https://6tmywlqskmo4mvbpfbrg.c0.europe-west3.gcp.weaviate.cloud"  # need to check this
+WEAVIATE_URL = os.getenv("WEAVIATE_URL")
 document_store = WeaviateDocumentStore(url=WEAVIATE_URL,
                                        auth_client_secret=auth_client_secret)
 
@@ -41,9 +41,6 @@ documents = load_local_dataset(local_dataset_path)
 Mistral_doc_embedder = MistralDocumentEmbedder(model="mistral-embed")
 
 embedder = MistralTextEmbedder(model="mistral-embed")
-
-result = embedder.run(text="How can I ise the Mistral embedding models with Haystack?")
-
 
 router = APIRouter()
 

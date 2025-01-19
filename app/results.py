@@ -30,8 +30,9 @@ results = [
         ],
         "suggestedQuestions": [
             "What does my elevated white blood cell count of 11.2 K/µL indicate?",
-            "Is my hemoglobin level of 14.2 g/dL within normal range?",
-            "What lifestyle changes could help improve these results?",
+            "What treatment did I receive for my itchy scalp and dandruff?"
+            "What were the results of my skin biopsy on my back?",
+            "What skin conditions have I been diagnosed with so far?",
         ],
         "metrics": [
             {

@@ -21,7 +21,7 @@ MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
 
 auth_client_secret = AuthApiKey()
 
-WEAVIATE_URL = "https://6tmywlqskmo4mvbpfbrg.c0.europe-west3.gcp.weaviate.cloud"  # need to check this
+WEAVIATE_URL = os.getenv("WEAVIATE_URL")  # need to check this
 document_store = WeaviateDocumentStore(url=WEAVIATE_URL,
                                        auth_client_secret=auth_client_secret)
 
@@ -77,17 +77,14 @@ Now, let's translate the medical information into simpler terms for better under
 Technical Answer: {{ technical_response }}
 
 *Here’s what you need to know*:  
-[Act as the AI medical doctor treating the patient and as if you are having a conversation with the patient directly right now. Provide a simple, easy-to-understand explanation of the answer. Always refer to the patient in the 2nd person singular. Make sure you are friendly and approachable, but do not overwhelm the patient with information. Try to keep the conversation going by pointing to things the patient might want to ask and get to know. No answer needs to be completely comprehensive, but can rather point to what might be relevant next. The goal is to have a free-flowing fast-paced conversation with the patient.]
+[Act as the AI medical doctor treating the patient and as if you are having a conversation with the patient directly right now. Provide a simple, easy-to-understand explanation of the answer. Always refer to the patient in the 2nd person singular (you). Make sure you are friendly and approachable, but do not overwhelm the patient with information. Try to keep the conversation going by pointing to things the patient might want to ask and get to know. No answer needs to be completely comprehensive, but can rather point to what might be relevant next. The goal is to have a free-flowing fast-paced conversation with the patient.]
 
 *What you can do next* [This should be optional and highly dependent on context - only provide this information if it genuinely makes sense based on what the patient asked! When patients ask a quick question about something basic make sure your answer is similarly short and to the point.]:  
 
 - *Medications*: [Provide clear, actionable advice about medications, if this only exist in the medical record e.g., "Take your insulin as prescribed, and make sure to monitor your blood sugar levels regularly."]  
 - *Activities*: [Suggest practical activities, if this only exist in the medical record e.g., "Try to go for a 20-minute walk every day—it’s great for your health!"]  
 - *Dietary Tips*: [Offer simple dietary advice, if this only exist in the medical record e.g., "Include more leafy greens and whole grains in your meals, and try to avoid sugary snacks."]  
-
-
-
-"""
+        """
     )
 ]
 
