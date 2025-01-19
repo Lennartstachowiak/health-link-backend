@@ -33,4 +33,3 @@ class Result(BaseModel):
 
 class ChatRequest(BaseModel):
     message: str
-    result: Result
